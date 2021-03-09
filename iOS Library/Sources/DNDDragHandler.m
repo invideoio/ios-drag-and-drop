@@ -59,6 +59,7 @@
         [self updateDraggingForGestureRecognizer:recognizer];
     } else {
         [self finishDraggingForGestureRecognizer:recognizer];
+        [_controller unregisterDragSource:_dragSourceView];
     }
 }
 
